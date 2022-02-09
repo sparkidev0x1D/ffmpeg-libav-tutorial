@@ -1,6 +1,7 @@
 [🇨🇳](/README-cn.md "Simplified Chinese")
 [🇰🇷](/README-ko.md "Korean")
 [🇪🇸](/README-es.md "Spanish")
+[🇻🇳](/README-vn.md "Vietnamese")
 
 [![license](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)
 
@@ -167,12 +168,12 @@ bunny_1080p_60fps_h265.mp4
 
 **Why?** sometimes some devices (TVs, smartphones, console and etc) doesn't support X but Y and sometimes newer containers provide modern required features.
 
-**How?** converting a `mp4` to a `webm`.
+**How?** converting a `mp4` to a `ts`.
 ```bash
 $ ffmpeg \
 -i bunny_1080p_60fps.mp4 \
 -c copy \ # just saying to ffmpeg to skip encoding
-bunny_1080p_60fps.webm
+bunny_1080p_60fps.ts
 ```
 
 ## Transrating
