@@ -78,7 +78,7 @@ fps = 24 //frames_per_second
 required_storage = tis * fps * toppf * cpp
 ```
 
-This video would require approximately `250.28GB` of storage or `1.11Gbps` of bandwidth! That's why we need to use a [CODEC](https://github.com/leandromoreira/digital_video_introduction#how-does-a-video-codec-work).
+This video would require approximately `250.28GB` of storage or `1.19 Gbps` of bandwidth! That's why we need to use a [CODEC](https://github.com/leandromoreira/digital_video_introduction#how-does-a-video-codec-work).
 
 ## container - a comfy place for audio and video
 
@@ -128,7 +128,7 @@ $ wget -O bunny_1080p_60fps.mp4 http://distribution.bbb3d.renderfarming.net/vide
 
 $ ffmpeg \
 -y \ # global options
--c:a libfdk_aac -c:v libx264 \ # input options
+-c:a libfdk_aac \ # input options
 -i bunny_1080p_60fps.mp4 \ # input url
 -c:v libvpx-vp9 -c:a libvorbis \ # output options
 bunny_1080p_60fps_vp9.webm # output url
